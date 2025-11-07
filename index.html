@@ -78,7 +78,7 @@
     @media print {
       html, body { background: none !important; width: 210mm !important; height: 297mm !important; }
       .container { display: none !important; }
-      .carta { display: block !important; box-shadow: none !important; margin: 0 !important; border: none !important; width: 210mm !important; height: 297mm !important; padding: 0 !important; background: url('memebrete.jpg') no-repeat top left !important; background-size: 100% 100% !important; background-color: white !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; overflow: hidden !important; }
+      .carta { display: block !important; box-shadow: none !important; margin: 0 !important; border: none !important; width: 210mm !important; height: 297mm !important; padding: 0 !important; background-size: 100% 100% !important; }
       .boton-imprimir, #volverBtn { display: none !important; }
     }
     .contenido-carta {
@@ -122,11 +122,13 @@
     .carta td.descripcion {
       text-align: left;
     }
+
+    /* Ajustes de firma: moví hacia arriba aproximadamente 2 líneas para evitar solapamiento */
     .firma-area {
-      margin-top: 20px;
+      margin-top: 12px; /* antes 20px, reducido para subir el bloque */
       position: relative;
       width: 250px;
-      height: 110px;
+      height: 90px; /* antes 110px, reducido */
     }
     .firma-img {
       position: absolute;
@@ -141,7 +143,7 @@
     .linea-firma {
       position: absolute;
       left: 0;
-      top: 40px;
+      top: 25px; /* antes 40px -> sube 15px */
       width: 180px;
       border-bottom: 1.5px solid #222;
       height: 1px;
@@ -150,7 +152,7 @@
     .firma-nombre {
       position: absolute;
       left: 0;
-      top: 45px;
+      top: 30px; /* antes 45px -> sube 15px */
       font-weight: bold;
       font-size: 12pt;
       margin: 0;
@@ -161,13 +163,14 @@
     .firma-cargo {
       position: absolute;
       left: 0;
-      top: 65px;
+      top: 50px; /* antes 65px -> sube 15px */
       font-style: italic;
       font-size: 11pt;
       margin: 0;
       z-index: 3;
       width: 100%;
     }
+
     #volverBtn {
       background: #6c757d;
       color: #fff;
@@ -262,9 +265,9 @@
     
     <p>1. La revisión preventiva es un servicio diferente a la Revisión Técnico Mecánica y de Emisiones Contaminantes y no está vinculado a la entrega de un certificado.</p>
     
-    <p>2. La revisión preventiva entrega un informe con un concepto aprobado o rechazado, según el cumplimiento de los ítems de inspección de la NTC 5375:2012, evaluados sensorialmente y mediante pruebas mecanizadas. Esto incluye la medición de la profundidad de labrado de las llantas de servicio y de repuesto, verificación de fugas de líquidos, y revisión del estado general de la parte inferior del vehículo de manera visual y al tacto, sin usar equipos especializados. También se comprueban los niveles de líquidos en los depósitos (frenos, limpiaparabrisas, refrigerante) y se realizan pruebas de alineación, suspensión, frenos, luces y emisiones contaminantes.</p>
+    <p>2. La revisión preventiva entrega un informe con un concepto aprobado o rechazado, según el cumplimiento de los ítems de inspección de la NTC 5375:2012, evaluados sensorialmente y mediante [...]
     
-    <p>3. La revisión preventiva no reemplaza el mantenimiento preventivo, como se indica en artículo 3 de la resolución 0315 de 2013 aclarado por el artículo 1 de la resolución 378 de 2013 "Artículo 3.- Mantenimiento de vehículos. El mantenimiento de los vehículos será preventivo y correctivo. El mantenimiento preventivo constituye la serie de intervenciones y reparaciones realizadas al vehículo con la finalidad de anticipar fallas o desperfectos; no podrá entenderse por mantenimiento preventivo las actividades de revisión o inspección. El mantenimiento correctivo es aquel que se ejecuta en cualquier momento al vehículo y ante la evidencia de una falla en cualquiera de sus componentes."</p>
+    <p>3. La revisión preventiva no reemplaza el mantenimiento preventivo, como se indica en artículo 3 de la resolución 0315 de 2013 aclarado por el artículo 1 de la resolución 378 de 2013 "Art�[...]
 
     <p>De optar por nuestros servicios por favor realizar transferencia a la cuenta corriente del Banco de Bogotá No. 168604882 a nombre de INVERSIN LTDA.</p>
     <p>Colocamos nuestras instalaciones a su servicio.</p>
